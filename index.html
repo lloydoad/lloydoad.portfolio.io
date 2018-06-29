@@ -3,33 +3,51 @@
 <head>
     <title>Lloyd Dapaah</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="navstyle.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="detailstyle.css">
-    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/detailstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="top-container">
-                <a href="index.html" class="menu-item" id="home-button">Lloyd Dapaah</a>
-                <ul>
-                    <li class="li-control">Web Development</li>
-                    <li class="li-control">Applications</li>
-                    <li class="li-control">Intelligence</li>
-                    <li class="li-control">Games and More</li>
-                </ul>
-                <a href="contact.html" class="menu-item" id="contact-button">Contact</a>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav-control">
+            <a class="navbar-brand main-home-link" href="index.html">Lloyd Dapaah</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand" href="#">Software</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand" href="#">Game Design</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand" href="#">Artificial Intelligence</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a class="nav-link navbar-brand" href="contact.html">Contact</a>
+            </span>
+          </div>
         </nav>
     </header>
     
     <div id="front-center">
-        <div id="intro-container">
-            <h1 class="intro-name">Lloyd Dapaah</h1>
-            <h3 class="intro-desc">A programming enthusiast and advocate for the study and implementation of new technologies</h3>
+        <div class="container introduction-container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="intro-name">Lloyd Dapaah</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <h3 class="intro-desc">A programming enthusiast and advocate for the study and implementation of new technologies</h3>
+                </div>
+            </div>
         </div>
     
         <div id="explore-container">
@@ -38,12 +56,12 @@
         </div>
     </div>
     
-    <div class="container">
+    <div class="container profile-container">
       <div class="row align-items-center">
-        <div class="col-sm-4" id="profile-picture-container">
+        <div class="col-md-4 col-sm-12" id="profile-picture-container">
           <img class="profilepicture" src="images/profilepicture.jpg">
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8" col-sm-12>
             <p class="para-container">
                 Hello. I am an Aerospace Engineering/Computer Science student with a lot of technical hobbies. Currently enrolled at the University of Central Florida, I have had the oppurtunity to meet great people doing great things. These are the people who inspired me to do this: to make a concious effort into putting my creativity and skills to use. Although I may not have sufficient knowledge on some of these topics, my goal with this website is to keep myself accountable and be self-motivated to always achieve more. I have knowledge in primarily Java and C. I have also worked on multiple opensource projects in Swift. I am currently working on improving my skills in web development with a future goal of integrating machine learning.
             </p>
@@ -200,36 +218,32 @@
                 </div>
             </div>
             <h4 class="footer-text">Direct emails are preferred for collaborations and employment opportunities:<br>lloyd.lloyddapaah@gmail.com</h4>
-            <div class=".container-fluid">
+            <div class=".container-fluid footer-menu-container">
                 <div class="row align-items-center">
-                    <div class="col-sm">
-                        <a href="index.html">Home</a>
+                    <div class="col-sm footer-menu">
+                        <a href="index.html" class="footer-menu-text">Lloyd Dapaah</a>
                     </div>
-                    <div class="col-sm">
-                      One of three columns
+                    <div class="col-sm footer-menu">
+                        <a href="index.html" class="footer-menu-text">Software</a>
                     </div>
-                    <div class="col-sm">
-                      One of three columns
+                    <div class="col-sm footer-menu">
+                    <a href="index.html" class="footer-menu-text">Game and Design</a>
                     </div>
-                    <div class="col-sm">
-                      One of three columns
+                    <div class="col-sm footer-menu">
+                        <a href="index.html" class="footer-menu-text">Intelligence</a>
                     </div>
-                    <div class="col-sm">
-                      One of three columns
+                    <div class="col-sm footer-menu">
+                        <a href="contact.html" class="footer-menu-text">Contact</a>
                     </div>
                 </div>
-                <ul>
-                    <li class="li-control">Home</li>
-                    <li class="li-control">Software</li>
-                    <li class="li-control">Game and Design</li>
-                    <li class="li-control">Intelligence</li>
-                    <li class="li-control">Contact</li>
-                </ul>
             </div>
         </div>
     </footer>
     
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/nav-shrink.js"></script>
 </body>

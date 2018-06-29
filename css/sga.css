@@ -1,0 +1,52 @@
+.top-half-container {
+    margin-top: 18vh;
+    margin-bottom: 10vh;
+}
+
+.prev-image-ctrl {
+    width: inherit;
+}
+
+.topic-text-ctrl {
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.t-text-ctrl {
+    font-size: 3.5em;
+}
+
+.projects-text-ctrl {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+
+.dark-down-arrow {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+    margin-bottom: 3vh;
+}
+
+.dark-down-arrow:hover {
+    transform: scale(1.2)
+}
+
+@media (max-width: 450px) {
+    .t-text-ctrl {
+        font-size: 1.5em;
+    }
+    
+    .p-text-ctrl {
+        font-size: 1em;
+    }
+    
+    .projects-text-ctrl {
+        font-size: 1.5em;
+    }
+}
